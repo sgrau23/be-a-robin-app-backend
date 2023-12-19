@@ -1,0 +1,22 @@
+{
+  "db": {
+    "mongo_db_uri": "mongodb://admin:admin@localhost/",
+    "db_name": "main",
+    "port": 27017,
+    "collections":{
+      "users_collections": ["users"],
+      "items_collections": ["items"]
+    }
+  },
+  "api": {
+    "port": 8999,
+    "dev_mode": true
+  },
+  "crypto": {
+    "secret_key": "be-a-robin",
+    "refresh_secret_key": "refresh-be-a-robin",
+    "access_token_expire_minutes": 30,
+    "refresh_token_expire_days": 7,
+    "algorithm": "HS256"
+  }
+}
